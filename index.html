@@ -7,9 +7,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="assets/css/sortable-jquery-ui.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Before Voting</title>
+
+	<script src="assets/js/sortable-jquery.js"></script>
+	<script src="assets/js/sortable-jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#sortable").sortable();
+		});
+	</script>
 </head>
 
 <body class="kites_voting_container">
@@ -21,8 +29,8 @@
 		<button class="kites_voting_header_button">Any button</button>
 	</header>
 
-	<main class="kites_voting_main_content">
-		<div class="kites_voting_candidate_row">
+	<main id="sortable" class="kites_voting_main_content">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">1</h5>
 				<div class="kites_voting_candidate_details">
@@ -41,8 +49,8 @@
 		</div>
 
 
-		
-		<div class="kites_voting_candidate_row">
+
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">2</h5>
 				<div class="kites_voting_candidate_details">
@@ -61,7 +69,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">3</h5>
 				<div class="kites_voting_candidate_details">
@@ -80,7 +88,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">4</h5>
 				<div class="kites_voting_candidate_details">
@@ -99,7 +107,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">5</h5>
 				<div class="kites_voting_candidate_details">
@@ -118,7 +126,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">6</h5>
 				<div class="kites_voting_candidate_details">
@@ -137,7 +145,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">7</h5>
 				<div class="kites_voting_candidate_details">
@@ -156,7 +164,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">8</h5>
 				<div class="kites_voting_candidate_details">
@@ -175,7 +183,7 @@
 		</div>
 
 
-		<div class="kites_voting_candidate_row">
+		<div class="kites_voting_candidate_row ">
 			<div class="kites_voting_candidate_row_start">
 				<h5 class="kites_voting_counter">9</h5>
 				<div class="kites_voting_candidate_details">
