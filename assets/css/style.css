@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.kites_voting_container {
+	max-width: 1173px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.kites_voting_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 71px;
+	padding-right: 10px;
+}
+
+
+.kites_voting_title {
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #191A1B;
+}
+
+.kites_voting_mini_title {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #5F7182;
+	margin-top: 8px;
+}
+
+.kites_voting_header_button {
+	width: 126px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Inter", sans-serif;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	background-color: #1960E9;
+	cursor: pointer;
+}
+
+.kites_voting_main_content {
+	margin-top: 56px;
+	width: 100%;
+	height: calc(100vh - 262px);
+	overflow-y: scroll;
+	padding-right: 10px;
+}
+
+.kites_voting_main_content::-webkit-scrollbar {
+	width: 10px;
+}
+
+.kites_voting_main_content::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.kites_voting_main_content::-webkit-scrollbar-thumb {
+	background-color: #F0F5FF;
+	border-radius: 10px;
+}
+
+
+.kites_voting_main_content .kites_voting_candidate_row:first-child {
+	background-color: #F4F6FA;
+}
+
+.kites_voting_candidate_row {
+	border: 1px solid #E4EBF1;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 44px;
+	padding: 13px 32px;
+	margin-bottom: 8px;
+}
+
+.kites_voting_candidate_row_start {
+	max-width: 355px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.kites_voting_counter {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #0F1011;
+}
+
+.kites_voting_candidate_details {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.kites_voting_candidate_image_container {
+	width: 56px;
+	height: 56px;
+	border: none;
+	border-radius: 50%;
+}
+
+.kites_voting_candidate_image {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.kites_voting_candidate_name {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #0F1011;
+}
+
+.kites_voting_candidate_short_description {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	color: #7F8E9B;
+}
+
+.kites_voting_baseline_icon {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	.kites_voting_header {
+		flex-direction: column;
+		gap: 24px;
+		align-items: start;
+		margin-top: 35px;
+	}
+
+	.kites_voting_header_button {
+		width: 100%;
+	}
+
+	.kites_voting_main_content {
+		margin-top: 42px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.kites_voting_candidate_details {
+		gap: 10px;
+	}
+}
